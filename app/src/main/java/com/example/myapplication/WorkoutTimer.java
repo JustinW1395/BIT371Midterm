@@ -16,10 +16,14 @@ public class WorkoutTimer extends AppCompatActivity {
         int time = getIntent().getExtras().getInt("time");
         String message = getIntent().getExtras().getString("message");
 
-        getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.fragment_container, TimerFragment.newInstance(time, message))
-                .commit();
+        if(savedInstanceState == null){
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container, TimerFragment.newInstance(time, message))
+                    .commit();
+        }
+
+
         //Log.i("INFO", "time is " + time);
         //Log.i("INFO", "message is " + message);
 
