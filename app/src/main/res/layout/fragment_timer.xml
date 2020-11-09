@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_drawlist"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/time_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/artifika"
+      android:text="00 : 00 : 00"
+      android:textColor="#52533E"
+      android:textSize="36sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/play_pause_fab"
+      app:layout_constraintVertical_bias="0.223" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/play_pause_fab"
+        android:layout_width="57dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="180dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_media_play"
+        app:backgroundTint="#ff7777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/fragment_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="76dp"
+      android:fontFamily="@font/artifika"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textColor="#52533E"
+      android:textSize="30sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.492"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
